@@ -84,18 +84,18 @@ UPDATE jogos SET nota = 5 WHERE nota = 7;
 UPDATE jogos SET nota = 8 WHERE id = 8;
 
 /*Deletes*/
-DELETE * FROM jogos WHERE ano_lancamento = 2016;
-DELETE nome FROM jogos WHERE nome = 'Marvels Spider Man';
-DELETE * FROM jogos WHERE id = 25;
-DELETE genero FROM jogos WHERE ano_lancamento < 1996;
-DELETE * FROM jogos WHERE id = 19;
-DELETE * FROM jogos WHERE genero = 'Aventura';
-DELETE nota FROM jogos WHERE nome = 'Mineirinho Adventures Director´s Cut';
-DELETE * FROM jogos WHERE id = 14;
-DELETE * FROM jogos WHERE nota < 8.5;
-DELETE * FROM jogos WHERE ano_lancamento BETWEEN 2020 AND 2022;
-DELETE * FROM jogos WHERE id = 22;
-DELETE nota FROM jogos WHERE id = 73;
+DELETE FROM jogos WHERE ano_lancamento = 2016;
+DELETE FROM jogos WHERE nome = 'Marvels Spider Man';
+DELETE FROM jogos WHERE id = 25;
+DELETE FROM jogos WHERE ano_lancamento < 1996;
+DELETE FROM jogos WHERE id = 19;
+DELETE FROM jogos WHERE genero = 'Aventura';
+DELETE FROM jogos WHERE nome = 'Mineirinho Adventures Director´s Cut';
+DELETE FROM jogos WHERE id = 14;
+DELETE FROM jogos WHERE nota < 8.5;
+DELETE FROM jogos WHERE ano_lancamento BETWEEN 2020 AND 2022;
+DELETE FROM jogos WHERE id = 22;
+DELETE FROM jogos WHERE id = 73;
 
 /*Funções*/
 
