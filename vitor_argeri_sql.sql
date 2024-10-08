@@ -103,6 +103,7 @@ SELECT * FROM jogos ORDER BY nota ASC LIMIT 1;
 SELECT * FROM jogos ORDER BY nota DESC;
 SELECT * FROM jogos ORDER BY nota DESC LIMIT 1;
 SELECT * FROM jogos WHERE nota != 9.5;
+SELECT * FROM jogos WHERE nota != 5.8;
 
 -- Delete
 
