@@ -62,7 +62,7 @@ UPDATE videogames SET estudio = 'Novo Estúdio' WHERE id = 12;
 UPDATE videogames SET nota = 1 WHERE estudio = 'Sinned Games';
 UPDATE videogames SET titulo = 'Indefinido' WHERE genero = 'Luta';
 UPDATE videogames SET ano_lancamento = 2024 WHERE genero = 'RPG';
-UPDATE videogames SET titulo = 'Novo título' WHERE ano_lancamento > 2023;
+UPDATE videogames SET titulo = 'Novo título' WHERE ano_lancamento BETWEEN 2015 AND 2017;
 UPDATE videogames SET genero = 'Indefinido' WHERE nota < 3;
 UPDATE videogames SET estudio = 'Indefinido' WHERE estudio = 'Ubisoft';
 UPDATE videogames SET titulo = 'Novo título' WHERE id = 20;
@@ -80,3 +80,17 @@ UPDATE videogames SET ano_lancamento = 1998 WHERE titulo = 'Batman: Arkham Asylu
 UPDATE videogames SET ano_lancamento = 1314 WHERE ano_lancamento > 2020;
 UPDATE videogames SET nota = 5 WHERE nota = 7;
 UPDATE videogames SET nota = 8 WHERE id = 8;
+
+/*Deletes*/
+DELETE * FROM jogos WHERE ano_lancamento = 2016;
+DELETE titulo FROM jogos WHERE titulo = 'Marvels Spider Man';
+DELETE * FROM jogos WHERE id = 25;
+DELETE genero FROM jogos WHERE ano_lancamento < 1996;
+DELETE * FROM jogos WHERE id = 19;
+DELETE * FROM jogos WHERE genero = 'Aventura';
+DELETE nota FROM jogos WHERE titulo = 'Mineirinho Adventures Director´s Cut';
+DELETE * FROM jogos WHERE id = 14;
+DELETE * FROM jogos WHERE nota < 8.5;
+DELETE * FROM jogos WHERE ano_lancamento BETWEEN 2020 AND 2022;
+DELETE * FROM jogos WHERE id = 22;
+DELETE nota FROM jogos WHERE id = 73;
