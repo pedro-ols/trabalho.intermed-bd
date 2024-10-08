@@ -1,0 +1,16 @@
+MER - Trabalho intermediário 
+
+Entidade(s):
+	> Jogo;
+
+Atributo(s):
+	> ID;
+	> Título;
+	> Gênero;
+	> Estúdio;
+	> Ano de lançamento;
+	> Nota (Imdb);
+
+Relacionamento(s):
+	>Não há relacionamentos, pois so há uma entidade;
+	
