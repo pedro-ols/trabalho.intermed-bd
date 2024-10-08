@@ -107,18 +107,19 @@ SELECT * FROM jogos WHERE nota != 5.8;
 
 -- Delete
 
-DELETE * FROM jogos WHERE id = 30;
-DELETE * FROM jogos WHERE id = 1 OR id = 2;
-DELETE * FROM jogos WHERE id > 199;
-DELETE * FROM jogos WHERE id < 4;
-DELETE * FROM jogos WHERE nome LIKE 'Y%';
-DELETE * FROM jogos WHERE nome LIKE 'D&';
-DELETE * FROM jogos WHERE estudio = 'Supermassive Games';
-DELETE * FROM jogos WHERE estudio = 'PS Games';
-DELETE * FROM jogos WHERE estudio LIKE '2%';
-DELETE * FROM jogos WHERE ano_lancamento = 1988;
-DELETE * FROM jogos WHERE ano_lancamento < 1986;
-DELETE * FROM jogos WHERE nota = 5.8;
+DELETE FROM jogos WHERE id = 30;
+DELETE FROM jogos WHERE id = 1 OR id = 2;
+DELETE FROM jogos WHERE id > 199;
+DELETE FROM jogos WHERE id < 4;
+DELETE FROM jogos WHERE nome LIKE 'Y%';
+DELETE FROM jogos WHERE nome LIKE 'D&';
+DELETE FROM jogos WHERE estudio = 'Supermassive Games';
+DELETE FROM jogos WHERE estudio = 'PS Games';
+DELETE FROM jogos WHERE estudio LIKE '2%';
+DELETE FROM jogos WHERE ano_lancamento = 1988;
+DELETE FROM jogos WHERE ano_lancamento < 1986;
+DELETE FROM jogos WHERE nota = 5.8;
+
 
 -- Funções
 
