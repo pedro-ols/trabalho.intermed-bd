@@ -42,3 +42,30 @@ INSERTS--
     ('Temple Run', 'Jump and Run', 'Imangi Studios', 2011, 6.0)
 
   
+UPDATES--
+
+UPDATE jogos SET nota = 10 WHERE id = 12;
+UPDATE jogos SET nome = ‘Slither.io’  WHERE id = 21;
+UPDATE jogos SET estudio = ‘Modificado’  WHERE nome LIKE ‘K%’;
+UPDATE jogos SET genero = ‘Terror’  WHERE genero = ‘Suspense’;
+UPDATE jogos SET nota = 9  WHERE genero = ‘Puzzle’;
+UPDATE jogos SET nome = ‘Kirbys Adventures 3’ WHERE nome = ‘Kirbys Adventure’;
+UPDATE jogos SET nota = 7 WHERE estudio LIKE = ‘S%’;
+UPDATE jogos SET estudio = ‘SEGA’ WHERE id = 6;
+UPDATE jogos SET genero = ‘Suspense’ WHERE nome = ‘Five Nights at Freddys’;
+UPDATE jogos SET ano_lancamento = 1900 WHERE nome = ‘Yoshis Island’;
+UPDATE jogos SET nome = ‘Solitaire’ WHERE nome = ‘Clash of Clans’;
+UPDATE jogos SET nota = 5 WHERE nome = ‘Clash Royale’;
+UPDATE jogos SET genero = ‘Street Racing’ WHERE estudio = ‘Ivory Tower’;
+UPDATE jogos SET estudio = ‘Supercell’ WHERE nome = ‘Candy Crush saga’;
+UPDATE jogos SET nome = ‘Kirbys Adventures 3’ WHERE nome = ‘Kirbys Adventure’;
+UPDATE jogos SET ano_lancamento = 1980 WHERE id = 49;
+UPDATE jogos SET estudio = ‘Rockstar’ WHERE nome = ‘Cut The Rope’;
+UPDATE jogos SET genero = ‘Adventure’ WHERE genero = ‘Aventura’;
+UPDATE jogos SET nota = 8 WHERE nome = ‘GTA 5’;
+UPDATE jogos SET ano_lancamento = 2017 WHERE nome = ‘League of Legends’;
+UPDATE jogos SET estudio = ‘Straight Back Games’ WHERE nome = ‘Devour’;
+UPDATE jogos SET nome = ‘Devour’ WHERE nome = ‘Temple Run’;
+UPDATE jogos SET genero = ‘Adventure’ WHERE nome = ‘Devour’;
+UPDATE jogos SET ano_lancamento = 2021 WHERE nome = ‘Devour’;
+UPDATE jogos SET nota = 9 WHERE nome = ‘Devour’
