@@ -69,3 +69,19 @@ UPDATE jogos SET nome = ‘Devour’ WHERE nome = ‘Temple Run’;
 UPDATE jogos SET genero = ‘Adventure’ WHERE nome = ‘Devour’;
 UPDATE jogos SET ano_lancamento = 2021 WHERE nome = ‘Devour’;
 UPDATE jogos SET nota = 9 WHERE nome = ‘Devour’
+
+
+DELETEs--
+
+DELETE FROM jogos WHERE id = 62;
+DELETE FROM jogos WHERE nome = ‘Club Penguin’
+DELETE FROM jogos WHERE id = 75;
+DELETE FROM jogos WHERE estudio LIKE = ‘R%’;
+DELETE FROM jogos WHERE ano_lancamento = 2012;
+DELETE FROM jogos WHERE nota < 3;
+DELETE FROM jogos WHERE id = 190;
+DELETE FROM jogos WHERE nome = ‘Candy Crush Soda Saga’;
+DELETE FROM jogos WHERE genero LIKE= ‘J%’;
+DELETE FROM jogos WHERE ano_lancamento = 2008;
+DELETE FROM jogos WHERE nota = 1;
+DELETE FROM jogos WHERE genero = ‘Wild Hunt’;
