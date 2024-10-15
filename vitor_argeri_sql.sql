@@ -1,4 +1,4 @@
--- Select
+-- Inserts
 
 ('The Witcher 3: Wild Hunt', 'RPG', 'CD Project Red', 2015, 9.6),
 ('The Witcher 2: Assassins of Kings', 'RPG', 'CD Project Red', 2011, 8.8),

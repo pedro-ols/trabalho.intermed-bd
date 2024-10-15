@@ -1,4 +1,4 @@
-INSERTS--
+-- Inserts
 
     ('Valorant', 'Jogo de Tiro Tático', 'Riot Games', 2020, 6.7),
     ('Counter Strike', 'Jogo de Tiro Tático', 'Valve Corporation', 2000, 9.0),
