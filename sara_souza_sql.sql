@@ -1,4 +1,4 @@
-INSERTS--
+--INSERTS
 
     ('Valorant', 'Jogo de Tiro Tático', 'Riot Games', 2020, 6.7),
     ('Counter Strike', 'Jogo de Tiro Tático', 'Valve Corporation', 2000, 9.0),
@@ -23,7 +23,7 @@ INSERTS--
     ('Just Dance', 'Jogo Rítmico', 'Ubisoft', 2009, 8.5),
     ('Cadillacs and Dinosaurs', 'Arcade', 'Capcom', 1993, 9.6),
     ('Club Penguin', 'MMORPG', 'The Walt Disney Company', 2005, 9.5),
-    ('Kirby\'s Adventure', 'Plataforma', 'Nintendo', 1993, 8.0),
+    ('Kirbys Adventure', 'Plataforma', 'Nintendo', 1993, 8.0),
     ('Cuphead', 'Plataforma', 'Studio MDHR', 2017, 9.0),
     ('Overcooked', 'Simulator', 'Ghost Town Games', 2016, 7.6),
     ('Genshin Impact', 'Aventura', 'miHoYo', 2020, 7.6),
@@ -34,15 +34,15 @@ INSERTS--
     ('My Singing Monsters', 'MMORTS', 'Big Blue Bubble', 2012, 8.0),
     ('The Legend of Zelda', 'Aventura', 'Nintendo', 1986, 8.6),
     ('Call of Duty: Warzone', 'Tiro', 'Infinity Ward', 2020, 6.6),
-    ('Yoshi\'s Island', 'Plataforma', 'Nintendo', 1995, 9.5),
-    ('That\'s Not My Neighbor', 'Suspense', 'Comic Studio', 2022, 7.2),
+    ('Yoshis Island', 'Plataforma', 'Nintendo', 1995, 9.5),
+    ('Thats Not My Neighbor', 'Suspense', 'Comic Studio', 2022, 7.2),
     ('The Classrooms', 'Aventura', 'Xefier Games', 2022, 9.0),
     ('Dumb Ways to Die', 'Puzzle', 'Metro Trains', 2012, 7.6),
     ('Banana Kong', 'Jump and Run', 'FDG Entertainment', 2013, 5.7),
     ('Temple Run', 'Jump and Run', 'Imangi Studios', 2011, 6.0)
 
   
-UPDATES--
+--UPDATES
 
 UPDATE jogos SET nota = 10 WHERE id = 12;
 UPDATE jogos SET nome = ‘Slither.io’  WHERE id = 21;
@@ -71,7 +71,7 @@ UPDATE jogos SET ano_lancamento = 2021 WHERE nome = ‘Devour’;
 UPDATE jogos SET nota = 9 WHERE nome = ‘Devour’
 
 
-DELETEs--
+--DELETEs
 
 DELETE FROM jogos WHERE id = 62;
 DELETE FROM jogos WHERE nome = ‘Club Penguin’
@@ -85,3 +85,41 @@ DELETE FROM jogos WHERE genero LIKE= ‘J%’;
 DELETE FROM jogos WHERE ano_lancamento = 2008;
 DELETE FROM jogos WHERE nota = 1;
 DELETE FROM jogos WHERE genero = ‘Wild Hunt’;
+
+
+--FUNÇÕES
+SELECT estudio, SUM(nota) AS soma_notas_estudio
+FROM jogos
+GROUP BY estudio;
+SELECT genero, AVG(nota) AS media_nota_genero
+FROM jogos
+GROUP BY genero;
+SELECT ano_lancamento, MAX(nota) AS maior_nota_ano
+FROM jogos
+GROUP BY ano_lancamento;
+SELECT nome, MIN(nota) AS menor_nota_nome
+FROM jogos
+GROUP BY nome;
+SELECT estudio, COUNT(*) AS total_jogoss_estudio
+FROM jogos
+GROUP BY estudio;
+SELECT DISTINCT UPPER(genero) AS genero_maiusculo
+FROM jogos;
+SELECT YEAR(ano_lancamento) AS ano, COUNT(nome) AS total_jogos_ano
+FROM jogos
+GROUP BY YEAR(ano_lancamento);                        
+SELECT LOWER(estudio) AS estudio_minusculo, COUNT(*) AS total_jogos
+FROM jogos
+GROUP BY LOWER(estudio);
+SELECT ROUND(AVG(nota), 2) AS media_nota_ano_b
+FROM jogos
+WHERE ano_lancamento = '2019';
+SELECT estudio, COUNT(DISTINCT nome) AS total_jogos_distintos
+FROM jogos
+GROUP BY estudio;
+SELECT genero, estudio, SUM(nota) AS soma_notas_genero_estudio
+FROM jogos
+GROUP BY genero, estudio;
+SELECT genero, COUNT(*) AS total_filmes_genero
+FROM jogos WHERE genero = ‘Adventure’
+GROUP BY genero;
